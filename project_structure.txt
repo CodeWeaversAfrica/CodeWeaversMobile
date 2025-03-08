@@ -1,0 +1,61 @@
+.
+├── app
+│   ├── _layout.tsx
+│   ├── +not-found.tsx
+│   └── (tabs)
+│       ├── careers.tsx
+│       ├── community.tsx
+│       ├── courses.tsx
+│       ├── index.tsx
+│       └── _layout.tsx
+├── app.json
+├── assets
+│   ├── fonts
+│   │   └── SpaceMono-Regular.ttf
+│   └── images
+│       ├── adaptive-icon.png
+│       ├── favicon.png
+│       ├── icon.png
+│       ├── partial-react-logo.png
+│       ├── react-logo@2x.png
+│       ├── react-logo@3x.png
+│       ├── react-logo.png
+│       └── splash-icon.png
+├── babel.config.js
+├── components
+│   ├── Collapsible.tsx
+│   ├── ExternalLink.tsx
+│   ├── HapticTab.tsx
+│   ├── HelloWave.tsx
+│   ├── ParallaxScrollView.tsx
+│   ├── __tests__
+│   │   ├── __snapshots__
+│   │   │   └── ThemedText-test.tsx.snap
+│   │   └── ThemedText-test.tsx
+│   ├── ThemedText.tsx
+│   ├── ThemedView.tsx
+│   └── ui
+│       ├── IconSymbol.ios.tsx
+│       ├── IconSymbol.tsx
+│       ├── TabBarBackground.ios.tsx
+│       └── TabBarBackground.tsx
+├── constants
+│   └── Colors.ts
+├── expo-env.d.ts
+├── global.css
+├── hooks
+│   ├── useColorScheme.ts
+│   ├── useColorScheme.web.ts
+│   └── useThemeColor.ts
+├── metro.config.js
+├── nativewind-env.d.ts
+├── package.json
+├── package-lock.json
+├── project_structure.txt
+├── README.md
+├── scripts
+│   └── reset-project.js
+├── tailwind.config.js
+└── tsconfig.json
+
+13 directories, 46 files
