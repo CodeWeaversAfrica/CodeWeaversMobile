@@ -8,10 +8,13 @@ import 'react-native-reanimated';
 import "../global.css"
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { Provider } from 'react-redux';
+import store from '@/store';
 
 SplashScreen.preventAutoHideAsync();
 
-export default function RootLayout() {
+
+function RootLayoutInner() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
@@ -24,7 +27,7 @@ export default function RootLayout() {
   }, [loaded]);
 
   if (!loaded) {
-    return null;
+    return null; // Prevent rendering until fonts are loaded
   }
 
   return (
@@ -37,5 +40,13 @@ export default function RootLayout() {
         </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <Provider store={store}>
+      <RootLayoutInner />
+    </Provider>
   );
 }
